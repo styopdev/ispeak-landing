@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Mukta:wght@200&family=Nanum+Gothic:wght@700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    border-bottom: 1px solid rgb(106 106 106 / 50%);
+}
+.header_block {
+    display: flex;
+    justify-content: center;
+}
+.header_nav_block {
+    width: 85vw;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 130px;
+}
+header .logo_block img{
+    width: 200px;
+}
+.logo_block {
+    margin-top: 6px;
+}
+.empty_section {
+    width: 11vw;
+    border-right: 1px solid rgb(106 106 106 / 50%);
+    height: 80vh;
+}
+main {
+    display: flex;
+}
+.info_section {
+    width: 44.5vw;
+    height: 80vh;
+}
+.image_section {
+    width: 44.5vw;
+    height: 80vh;
+    background-size: cover;
+    background-image: url("images/logo.png");
+}
+.info_section div h2{
+    font-size: 70px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+footer {
+    border-top: 1px solid rgb(106 106 106 / 50%);
+}
