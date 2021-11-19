@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Mukta:wght@200&family=Nanum+Gothic:wght@700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
 header {
     border-bottom: 1px solid rgb(106 106 106 / 50%);
 }
+
 .header_block {
     display: flex;
     justify-content: center;
 }
+
 .header_nav_block {
     width: 85vw;
     height: 84px;
@@ -17,37 +21,131 @@ header {
     justify-content: space-between;
     margin-left: 130px;
 }
-header .logo_block img{
+
+header .logo_block img {
     width: 200px;
 }
+
 .logo_block {
     margin-top: 6px;
 }
+
 .empty_section {
     width: 11vw;
     border-right: 1px solid rgb(106 106 106 / 50%);
     height: 80vh;
 }
+
 main {
     display: flex;
+    justify-content: space-between;
 }
+
 .info_section {
     width: 44.5vw;
     height: 80vh;
+    overflow: hidden;
 }
+
 .image_section {
     width: 44.5vw;
     height: 80vh;
-    background-size: cover;
     background-image: url("images/logo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.info_section div h2{
+
+.info_section div h2 {
     font-size: 70px;
     font-family: 'Nanum Gothic', sans-serif;
     margin-top: 70px;
     margin-bottom: 50px;
     margin-left: 100px;
 }
+
 footer {
     border-top: 1px solid rgb(106 106 106 / 50%);
+}
+
+.img_block {
+    margin: 30px 66px;
+}
+
+footer {
+    border-top: 1px solid rgb(106 106 106 / 50%);
+}
+#mc_embed_signup .button {
+    background-color: #ff0981 !important;
+}
+@media only screen and (max-width: 1352px) {
+    .coming_soon_img {
+        width: 490px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .coming_soon_img {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .empty_section {
+        display: none;
+    }
+
+    .image_section {
+        width: 54.5vw;
+    }
+
+    .coming_soon_img {
+        width: 311px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .image_section {
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        width: 100%;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    }
+
+    main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    #mc_embed_signup {
+        background: transparent !important;
+    }
+    .info_section {
+        position: absolute;
+        z-index: 9;
+        overflow: visible;
+        width: 58.5vw;
+    }
+
+    .header_nav_block {
+        width: 103vw;
+        height: 84px;
+        display: flex;
+        margin-left: 27px;
+        justify-content: center;
+    }
+    .img_block {
+        margin: 30px 13px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .coming_soon_img {
+        width: 260px;
+    }
+}
+@media only screen and (max-width: 388px) {
+    .coming_soon_img {
+        width: 210px;
+    }
 }
